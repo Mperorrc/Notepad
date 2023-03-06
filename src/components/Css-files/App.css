@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    background-color: black;
+    width:10%;
+}
+
+.sidebar_element{
+    margin-top: 100px;
+}
+
+.sidebar_element img{
+    height:50px;
+    width:50px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.sidebar-options{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap:15px;
+    margin-left: 20px;
+    height:0;
+    transition: 300ms;
+}
+
+.sidebar-options_active{
+    height:300px;
+}
+
+.dots{
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.note_container{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    background-color: grey;
+}
+
+.head{
+    height: 10vh;
+    background-color: black;
+    color:white;
+}
+
+.header-content{
+    text-align:center;
+    font-size: 40px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    font-family: sans-serif;
+}
+
+.note_body{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    overflow-y: scroll;
+}
+
+.note_element{
+    background: rgba(55, 252, 0, 0.888);
+    border-radius: 15px;
+    border: 1.5px double black;
+    color:black;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 250px;
+    width:28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.note_element_head{
+    height:10%;
+}
+
+.note_element_body{
+    height:80%;
+    width:100%;
+    margin-top: 20px;
+}
+
+.note_element_head_text{
+    height:100%;
+    width:100%;
+    resize: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 2 rem;
+    outline: none;
+    border: none;
+}
+
+.note_element_body_text{
+    height:100%;
+    width:100%;
+    resize: none;
+    background-color: transparent;
+    font-size: 1 rem;
+    line-height: 2 rem;
+    outline: none;
+    border: none;
+}
+
+.note_element_foot {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.note_element_foot_date{
+    width:60%;
+}
+.note_element_foot_btn{
+    width:20%;
+}
+
+.note_element_foot_btn button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
